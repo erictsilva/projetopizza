@@ -25,24 +25,6 @@ O frete é calculado como:
 
 O valor total do pedido é a soma do preço das pizzas e o frete.
 
-## Requisitos:
-
-- **Java 8** ou superior instalado no sistema.
-- Um ambiente de desenvolvimento Java como Eclipse, IntelliJ IDEA, ou apenas o terminal para compilar e executar.
-
-## Como Executar o Projeto:
-
-1. Navegue até o diretório do projeto.
-   - No Windows: `C:\Users\SeuUsuario\Desktop\projetopizza`
-   - No Linux/macOS: `/home/SeuUsuario/Área de Trabalho/projetopizza`
-   
-2. Compile o código-fonte:
-   - Usando terminal: `javac -d bin src/Projeto/*.java`
-   - Usando uma IDE como Eclipse ou IntelliJ IDEA: basta importar o projeto e executar o arquivo `Pizzaria.java`.
-
-3. Execute o programa:
-   - Via terminal: `java -cp bin Projeto.Pizzaria`
-
 ## Estrutura do Projeto:
 
 ```bash
