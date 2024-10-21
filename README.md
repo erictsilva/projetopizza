@@ -19,3 +19,19 @@ O projeto é dividido nas seguintes classes principais:
 - **Pizza**: Classe que representa uma pizza, contendo informações sobre sabores e preços.
 - **Pedido**: Classe que representa um pedido feito por um cliente, armazenando as pizzas selecionadas e o total do pedido.
 - **Cardapio**: Classe que contém o cardápio de pizzas com preços.
+- 
+## Como Executar
+
+1. Clone o repositório:
+   ```bash
+   git clone <url-do-repositorio>
+
+2. Navegue até o diretório do projeto:
+   cd <nome-do-diretorio>
+   
+3. Compile o projeto:
+   javac -d bin src/Projeto/*.java
+
+4. Execute o programa:
+   java -cp bin Projeto.Pizzaria
+
