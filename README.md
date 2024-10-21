@@ -25,13 +25,7 @@ O projeto é dividido nas seguintes classes principais:
 1. Clone o repositório:
    ```bash
    git clone <url-do-repositorio>
-
-2. Navegue até o diretório do projeto:
-   cd <nome-do-diretorio>
-   
-3. Compile o projeto:
+   cd<nome-do-diretorio>
    javac -d bin src/Projeto/*.java
-
-4. Execute o programa:
    java -cp bin Projeto.Pizzaria
 
