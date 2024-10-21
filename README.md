@@ -10,7 +10,7 @@
 - **Gerar Relatório de Vendas**: Exibe um relatório do faturamento total do dia, os sabores de pizza mais pedidos e as ligações entre os sabores mais pedidos.
 - **Calcular Frete**: Calcula o custo do frete baseado na distância do pedido.
 
-### Estrutura do Projeto
+## Estrutura do Projeto
 
 O projeto é dividido nas seguintes classes principais:
 
