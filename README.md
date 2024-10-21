@@ -1,31 +1,58 @@
-# Projeto Pizzaria
+# Projeto: Pizzaria - Pixx Pizza
 
-**Pixx Pizza** é um sistema de gerenciamento de pedidos de pizzaria desenvolvido em Java. O sistema permite que os usuários cadastrem clientes, façam pedidos, alterem pedidos existentes, visualizem relatórios de vendas e calculem o frete.
+Este é um projeto Java que simula o gerenciamento de pedidos de uma pizzaria. Ele permite a criação de clientes, a realização de pedidos de pizzas com diferentes sabores e tamanhos, alteração de pedidos e cálculo de frete.
 
-## Funcionalidades
+## Funcionalidades:
 
-- **Cadastro de Clientes**: Adiciona novos clientes com nome, endereço, telefone e email.
-- **Fazer um Pedido**: Permite que os clientes façam pedidos de pizzas, selecionando tamanhos e sabores disponíveis.
-- **Alterar Pedido**: Possibilita a adição, remoção ou alteração de pizzas em um pedido existente.
-- **Gerar Relatório de Vendas**: Exibe um relatório do faturamento total do dia, os sabores de pizza mais pedidos e as ligações entre os sabores mais pedidos.
-- **Calcular Frete**: Calcula o custo do frete baseado na distância do pedido.
+1. **Fazer um Pedido**: O usuário pode selecionar um cliente, adicionar pizzas ao pedido, escolher o tamanho e os sabores das pizzas, além de visualizar o valor total do pedido.
+2. **Alterar Pedido**: É possível alterar um pedido, adicionando, removendo ou alterando sabores das pizzas já inseridas.
+3. **Adicionar Cliente**: Adicione novos clientes ao sistema, inserindo nome, endereço, telefone e email.
+4. **Gerar Relatório de Vendas**: Exibe o faturamento total e a quantidade de pedidos feitos para cada sabor.
+5. **Lista de Clientes**: Exibe uma lista de todos os clientes cadastrados.
+6. **Calcular Frete**: O programa calcula o frete com base na distância e quantidade de pizzas, e exibe o valor total do pedido, incluindo o frete.
 
-## Estrutura do Projeto
+## Regras de Preço:
+- **Tamanhos de Pizza**: 
+  - Brotinho (50% do valor da pizza grande).
+  - Grande (preço base).
+  - Extra Grande (+ R$ 10,00 em relação à pizza grande).
+- O preço é calculado com base nos sabores e no tamanho da pizza.
+  
+## Cálculo do Frete:
+O frete é calculado como:
+- Preço por quilômetro: R$ 2,00
+- Preço por pizza: R$ 1,50
 
-O projeto é dividido nas seguintes classes principais:
+O valor total do pedido é a soma do preço das pizzas e o frete.
 
-- **Pizzaria**: Classe principal que gerencia a interação com o usuário e coordena as funcionalidades do sistema.
-- **Cliente**: Classe que representa um cliente, contendo informações como nome, endereço, telefone e email.
-- **Pizza**: Classe que representa uma pizza, contendo informações sobre sabores e preços.
-- **Pedido**: Classe que representa um pedido feito por um cliente, armazenando as pizzas selecionadas e o total do pedido.
-- **Cardapio**: Classe que contém o cardápio de pizzas com preços.
-- 
-## Como Executar
+## Requisitos:
 
-1. Clone o repositório:
-   ```bash
-   git clone <url-do-repositorio>
-   cd<nome-do-diretorio>
-   javac -d bin src/Projeto/*.java
-   java -cp bin Projeto.Pizzaria
+- **Java 8** ou superior instalado no sistema.
+- Um ambiente de desenvolvimento Java como Eclipse, IntelliJ IDEA, ou apenas o terminal para compilar e executar.
 
+## Como Executar o Projeto:
+
+1. Navegue até o diretório do projeto.
+   - No Windows: `C:\Users\SeuUsuario\Desktop\projetopizza`
+   - No Linux/macOS: `/home/SeuUsuario/Área de Trabalho/projetopizza`
+   
+2. Compile o código-fonte:
+   - Usando terminal: `javac -d bin src/Projeto/*.java`
+   - Usando uma IDE como Eclipse ou IntelliJ IDEA: basta importar o projeto e executar o arquivo `Pizzaria.java`.
+
+3. Execute o programa:
+   - Via terminal: `java -cp bin Projeto.Pizzaria`
+
+## Estrutura do Projeto:
+
+```bash
+projetopizza/
+├── src/
+│   └── Projeto/
+│       ├── Pizzaria.java
+│       ├── Cliente.java
+│       ├── Pedido.java
+│       ├── Pizza.java
+│       └── Cardapio.java
+├── README.md
+└── bin/
